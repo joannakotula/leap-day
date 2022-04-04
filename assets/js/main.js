@@ -31,3 +31,12 @@ $(function() {
 
   $('img').on('load', sectionHeight);
 });
+
+function toggleMenu() {
+  var x = document.getElementById("banner");
+  if (x.className === "") {
+    x.className += "responsive";
+  } else {
+    x.className = "";
+  }
+} 

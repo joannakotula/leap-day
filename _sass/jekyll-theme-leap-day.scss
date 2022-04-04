@@ -260,6 +260,10 @@ header {
   .menu {
     float: right;
     margin: 0 5px 0 0;
+
+    a.icon {
+      display: none;
+    }
   }
 
   ul {
@@ -279,11 +283,11 @@ header {
   }
 
   #logo {
-    position:absolute;
+    float: right;;
     height: 36px;
     width: 36px;
-    right:7px;
-    top:7px;
+    margin-right:7px;
+    margin-top:7px;
     display: block;
     background: url(../images/octocat-logo.svg);
   }
@@ -493,7 +497,41 @@ footer {
     margin-top: 5px;
   }
 
-  #banner { display: none;}
+  #banner { 
+    height: 20px;
+    position: relative;
+    top: 0;
+
+    div:not(.menu) {
+      display: none;
+    }
+
+    .menu {
+      text-align: right;
+      a.icon {
+        // float: right;
+        display: block;
+        margin: 2px
+      }
+  
+      a.button {
+        display: none;
+      }
+    }
+
+  }
+
+  #banner.responsive .menu{
+    a.button {
+      display: block;
+      float: none;
+      text-align: left;
+      position: relative;
+      margin: 1px;
+      left: initial;
+    }
+  }
+
   header ul {
     display:none;
   }
