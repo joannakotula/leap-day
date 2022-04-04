@@ -4,5 +4,5 @@ show_downloads: true
 google_analytics:
 theme: jekyll-theme-leap-day
 menu:
-  Main: ./
-  Another page: another-page.html
+  Main: /
+  Another page: /another-page.html
