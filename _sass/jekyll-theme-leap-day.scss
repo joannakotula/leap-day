@@ -497,9 +497,12 @@ footer {
     margin-top: 5px;
   }
 
-  #banner { 
+  #banner { display: none;}
+
+  #banner.withmenu { 
     height: 20px;
     position: relative;
+    display: block;
     top: 0;
 
     div:not(.menu) {

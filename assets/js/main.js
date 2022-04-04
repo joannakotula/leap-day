@@ -34,9 +34,9 @@ $(function() {
 
 function toggleMenu() {
   var x = document.getElementById("banner");
-  if (x.className === "") {
-    x.className += "responsive";
+  if (x.className === "withmenu") {
+    x.className += " responsive";
   } else {
-    x.className = "";
+    x.className = "withmenu";
   }
 } 
